@@ -4,3 +4,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media (max-width: 600px) {
+  .mainContainer {
+    background-image: url("/LOVE_YOUR_SPACE.png");
+  }
+}

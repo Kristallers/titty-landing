@@ -24,8 +24,8 @@ export function Model(props) {
 
     tl.current
 
-      .to(carRef.current.rotation, { y: 1.1 }, 4)
-      .to(carRef.current.position, { x: -2.5, z: 1.5 }, 4)
+      .to(carRef.current.rotation, { y: 1.1 }, 2.5)
+      .to(carRef.current.position, { x: -2.5, z: 1.5 }, 2.5)
 
       .to(carRef.current.rotation, { y: 0, x: 0.5 }, 16)
       .to(carRef.current.position, { x: 0, z: 1, y: -1 }, 16);
