@@ -9,6 +9,10 @@
   margin-top: 4rem;
 }
 
+.yellow {
+  color: #fff200;
+}
+
 .introductionText {
   font-family: "Space Grotesk", sans-serif;
 }
@@ -36,7 +40,7 @@
   text-transform: uppercase;
   background-color: #111111ad;
   color: #fff;
-  border: 2px solid rgb(69, 222, 58);
+  border: 2px solid #a5da4f;
   border-radius: 0px;
   padding: 18px 36px;
   display: inline-block;
@@ -51,8 +55,8 @@
 }
 
 .startBtn:hover {
-  box-shadow: inset 0 100px 0 0 rgb(69, 222, 58);
-  color: #ff0080;
+  box-shadow: inset 0 100px 0 0 #a5da4f;
+  color: #000000;
 }
 
 .theVideo {

@@ -30,16 +30,19 @@ const CanvasComponent = () => {
             }}
             className={styles.introductionText}
           >
-            <h1 className={styles.mainTitle}>Yung Titties Experience</h1>
+            <h1 className={styles.mainTitle}>
+              <span className={styles.yellow}>Yung Titties</span> Experience
+            </h1>
             <p className={styles.p}>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
-              facere animi at, explicabo voluptatibus veritatis nesciunt nobis,
-              error iure officia debitis blanditiis, facilis ipsum perferendis
-              quas sint alias perspiciatis harum. Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Nemo facere animi at, explicabo
-              voluptatibus veritatis nesciunt nobis, error iure officia debitis
-              blanditiis, facilis ipsum perferendis quas sint alias perspiciatis
-              harum.
+              This all-female hip-hop trio from Sweden is about to blow your
+              mind. Since 2016, they've been defying the music industry's rules,
+              creating major music without major labels. With their debut single
+              "Tsunami," they celebrate the power of the Pussy and give a
+              defiant nod to those who underestimate it. <br></br>
+              <br></br> And now, here's a treat for you — a fun game that lets
+              you experience their next single and new sound. Tap on your iPhone
+              or use the keys 'a,' 's,' and 'd' on your browser—it's like Guitar
+              Hero, Yung Titties style! Let's make music magic together!
             </p>
           </div>
 
@@ -59,8 +62,11 @@ const CanvasComponent = () => {
             <p className={styles.videoText}>
               You can play the game on mobile or on desktop.<br></br>
               The goal is to hit the spheres coming towars you when they collide
-              with the three rings at the bottom. Try to get the best accuracy
-              possible!
+              with the three rings at the bottom. On Desktop use the{" "}
+              <span className={styles.yellow}>'A' 'S' 'D' </span>
+              buttons and on mobile just{" "}
+              <span className={styles.yellow}>click </span> the rings. Try to
+              get the best accuracy possible!
             </p>
             <video
               className={styles.theVideo}
