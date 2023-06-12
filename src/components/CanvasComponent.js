@@ -1,5 +1,7 @@
 import React from "react";
 import { Scroll, ScrollControls } from "@react-three/drei";
+import { Model } from "./Model.jsx";
+import styles from "./CanvasComponent.module.css";
 
 const CanvasComponent = () => {
 	return (
@@ -15,10 +17,71 @@ const CanvasComponent = () => {
 					intensity={2}
 					shadow-bias={-0.0001}
 				/>
+				<Model position={[3, 0.2, 0]} rotation={[Math.PI / 30, -1, 0]} />
+
 				<Scroll>{/* Canvas contents in here will scroll along */}</Scroll>
 				<Scroll html style={{ width: "100%", color: "white" }}>
 					<div>FIRST ELEMENT</div>
+					<h1 className={styles.mainTitle}>Yung Titties Experience</h1>
+					<div
+						style={{
+							position: "absolute",
+							top: "35vh",
+							left: "10vw",
+							width: "50%",
+						}}
+						className={styles.introductionText}
+					>
+						<p className={styles.p}>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
+							facere animi at, explicabo voluptatibus veritatis nesciunt nobis,
+							error iure officia debitis blanditiis, facilis ipsum perferendis
+							quas sint alias perspiciatis harum. Lorem ipsum dolor sit, amet
+							consectetur adipisicing elit. Nemo facere animi at, explicabo
+							voluptatibus veritatis nesciunt nobis, error iure officia debitis
+							blanditiis, facilis ipsum perferendis quas sint alias perspiciatis
+							harum.
+						</p>
+					</div>
+
 					<div style={{ position: "absolute", top: "100vh" }}>Next element</div>
+					<div
+						style={{ position: "absolute", top: "75vh", left: "50vw" }}
+						className={styles.video}
+					>
+						<h2 className={styles.instructionsVideo}>How to play</h2>
+						<p className={styles.videoText}>
+							You can play the game on mobile or on desktop.<br></br>
+							The goal is to hit the spheres coming towars you when they collide
+							with the three rings at the bottom. Try to get the best accuracy
+							possible!
+						</p>
+						<video
+							className={styles.theVideo}
+							autoPlay
+							loop
+							muted
+							style={{ width: "700px", height: "auto" }}
+						>
+							<source src="video.mp4" type="video/mp4"></source>
+						</video>
+					</div>
+
+					<div
+						style={{
+							display: "flex",
+							justifyContent: "center",
+							alignItems: "center",
+						}}
+					>
+						<button
+							className={styles.startBtn}
+							style={{ position: "absolute", top: "183vh" }}
+						>
+							<a href="https://tittieteam.vercel.app">Play the game</a>
+						</button>
+					</div>
+
 					{/* DOM contents in here will scroll along */}
 				</Scroll>
 			</ScrollControls>
