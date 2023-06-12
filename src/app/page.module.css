@@ -1,5 +1,5 @@
 .mainContainer {
-	min-height: 100vh;
-	background-image: url("/LOVE_YOUR_SPACE.png");
-	background-repeat: no-repeat;
+  min-height: 100vh;
+  /* background-image: url("/background.png");
+  background-repeat: no-repeat; */
 }
